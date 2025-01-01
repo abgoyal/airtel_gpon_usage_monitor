@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "axios-cookiejar-support": "^5.0.3",
+    "node-jsencrypt": "^1.0.0",
+    "sjcl": "^1.0.8",
+    "tough-cookie": "^5.0.0"
+  }
+}
