@@ -3,7 +3,7 @@
 BEGIN {
     OFS = " ";                   # Output field separator
     utc_offset_seconds = 5 * 3600 + 30 * 60; # Offset in seconds for IST (+5:30)
-    PROCINFO["sorted_in"] = "@ind_str_asc"
+    PROCINFO["sorted_in"] = "@ind_str_asc" ; # set sorting order for arrays
 }
 {
     # Parse ISO datetime and MB value
@@ -50,7 +50,6 @@ BEGIN {
 }
 END {
     # Output the transfer data for each hour
-    #asorti(hourly_transfer)
     for (hour in hourly_transfer) {
         print hour, hourly_transfer[hour];
     }
